@@ -1,0 +1,65 @@
+extends common_parts/template.pug
+
+block vars
+	- var pageId = 2
+	- var page_name = "cement"
+	- var title__h1 = "Цемент с доставкой в Пушкино"
+
+	- var title = "Купить Цемент в Пушкино с доставкой, цены производителя Лесстрон"
+	- var description = "Цемент с доставкой до Пушкино, купить по лучшей цене в компании Лесстрон. Будем рады сотрудничеству"
+	- var keywords = "цемент Пушкино, купить цемент, цемент цена"
+
+	- var beton_class = "template-page template-page--cement"
+
+block header
+	include common_parts/header__template.pug
+
+
+block main
+
+	.template-article__wrap
+		.text-elements__wrap
+			h2.template__h2 Цемент с доставкой от производителя
+			p.
+				Не знаете где купить цемент в Пушкино? <b>К вашим услугам компания «Лесстрон»</b>. Для производства вещества используются самые лучшие материалы. Гарантируется прочность и качественность сырья.
+			p.
+				Ни одна стройка не обходится без этого минерального вещества. Благодаря цементу возводятся многоэтажные дома, торговые комплексы и детские сады. Поэтому к выбору производителя стоит относиться со всей ответственностью.
+			p.
+				Сотрудники оперативно оформят заказ и предоставят быструю доставку. Приемлемые цены, гарантия качества и опытные специалисты, все это можно найти только в компании «Лесстрон».
+			p.
+				<b>Доставка цемента с заводов ООО "Азияцемент" и ООО "СЦЗ" от 4100 до 4300 руб за кубометр.</b>
+
+		.beton-template-price__table
+			.price-template-table__top-row
+				span.price-template-table__column-title Производитель
+				span.price-template-table__column-title Доставка
+				span.price-template-table__column-title Цена
+
+			.price-template-table__row
+				span.price-template-table__row-value ООО "Евроцемент"
+				span.price-template-table__row-value По всей Московской области
+				span.price-template-table__row-value 3 880 руб./м3
+
+			.price-template-table__row
+				span.price-template-table__row-value ООО "СЦЗ"
+				span.price-template-table__row-value Щёлковское, Носовихинское, Рязанское, Каширское, Варшавское, Энтузиастов шоссе, трасса "Дон"
+				span.price-template-table__row-value 3 980 руб./м3
+
+			.price-template-table__row
+				span.price-template-table__row-value ООО "СЦЗ"
+				span.price-template-table__row-value Калужское, Киевское, Минское, Можайское, Ярославское шоссе
+				span.price-template-table__row-value 4 080 руб./м3
+
+			.price-template-table__row
+				span.price-template-table__row-value ООО "СЦЗ"
+				span.price-template-table__row-value Рублевское, Новорижское, Волоколамское, Пятницкое, Ленинградское и Дмитровское шоссе
+				span.price-template-table__row-value 4 270 руб./м3
+
+			.template-promo-block
+				.promo-text__wrap
+					h3.promo__h3 Вопросы или заказ цемента:
+					.promo__contacts
+						span.promo__contacts__item 8-499-641-10-20
+						span.promo__contacts__item info@lesstron.com
+
+				a(href="#callback").big-orange-button.popup-js Заказать цемент
